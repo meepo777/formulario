@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Curso</title>
+</head>
+<body>
+  <h1>Cadastro de Curso</h1>
+  <form action="recebido.php" method="post">
+    
+    <label for="curso">Curso:</label><br>
+    <input type="text" id="curso" name="curso" required><br><br>
+
+    <label for="carga_horaria">Carga Horária (em horas):</label><br>
+    <input type="number" id="carga_horaria" name="carga_horaria" required><br><br>
+
+    <label for="vagas">Número de Vagas:</label><br>
+    <input type="number" id="vagas" name="vagas" required><br><br>
+
+    <label for="turma">Turma:</label><br>
+    <input type="text" id="turma" name="turma"><br><br>
+
+    <label for="descricao">Descrição do Curso:</label><br>
+    <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br><br>
+
+    <label for="data_inicio">Data de Início:</label><br>
+    <input type="date" id="data_inicio" name="data_inicio" required><br><br>
+
+    <label for="data_fim">Data de Fim:</label><br>
+    <input type="date" id="data_fim" name="data_fim" required><br><br>
+
+    <label for="professor">Professor Responsável:</label><br>
+    <select id="professor" name="professor" required>
+      <option value="">--Selecione--</option>
+      <option value="ana_silva">Gabriel Seeep</option>
+      <option value="joao_pereira">Danilo Pedrosa</option>
+      <option value="maria_oliveira">hunt tavito</option>
+      <option value="carlos_souza">Carlos Roberto Quintino Rocha Junior</option>
+    </select><br><br>
+
+    <label for="apostila">Upload da Apostila (PDF, DOC, etc.):</label><br>
+    <input type="file" id="apostila" name="apostila" accept=".pdf,.doc,.docx,.word" required><br><br>
+    
+    <input type="submit" value="Cadastrar Curso">
+  </form>
+</body>
+</html>
+
+
+</body>
+</html>
